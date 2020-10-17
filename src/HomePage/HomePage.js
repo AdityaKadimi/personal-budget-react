@@ -1,4 +1,6 @@
 import React from 'react';
+import ChartJS from '../ChartJS/ChartJS';
+import D3JSComp from '../D3JSComp/D3JSComp';
 
 function HomePage() {
   return (
@@ -79,16 +81,26 @@ function HomePage() {
                 {/* <!-- This is a A11y change (Dir)--> */}
                 <p dir="ltr">
                     This app is free!!! And you are the only one holding your data!
-                    <canvas id="myChart" width="400" height="400" left="50%"></canvas>
+                <canvas id="myChart" width="200" height="200" left="50%"></canvas>
+                <ChartJS/>
                 </p>
             </article>
             
-            <div>
-                <h1>Chart 2</h1>
-                <div  id="dochart" className = "donutchart"></div>  
-            </div>
+            
         </div>
+        <div>
+                
+                <br/>
+                <div  id="dochart" className = "donutchart">
+                <h1>Chart 2</h1>  
+                <D3JSComp/>
+                </div>
+            </div>
+       
+
     </main>
+    
+    
   );
 }
 

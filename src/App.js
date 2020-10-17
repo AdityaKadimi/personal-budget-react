@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import {
   BrowserRouter as Router,
@@ -30,7 +30,7 @@ function App() {
             <HomePage/>
           </Route>
         </Switch>
-      </div>
+        </div>
       <Footer/>
     </Router>
   );
